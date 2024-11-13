@@ -1,8 +1,7 @@
 <?php
 
-use Inertia\Inertia;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\LocationsController;
+use Inertia\Inertia;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,24 +15,6 @@ use App\Http\Controllers\LocationsController;
 */
 
 Route::get('/', function () {
-    return Inertia::render('Weather/Index');
-})->name('weather.index');
-
-Route::get('/locations', [LocationsController::class, 'index'])->name('locations.index');
-
-Route::get('/users', function () {
-    sleep(2);
-    return Inertia::render('Users', [
-        'name' => 'Jeff',
-        'techstacks' => [
-            'Laravel', 'Vue', 'PHP', 'Python', 'MySQL'
-        ],
-    ]);
-})->name('users.index');
-
-Route::post('/logout', function () {
-    
-    dd(phpversion());
-})->name('logout');
-
+    return Inertia::render('Home');
+})->name('home');
 
