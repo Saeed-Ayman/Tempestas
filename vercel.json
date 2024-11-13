@@ -25,6 +25,7 @@
     "APP_NAME": "Tempestas",
     "APP_ENV": "local",
     "APP_DEBUG": "true",
+      "APP_KEY": "base64:UDdWX9nK30RdxxaKa5XJHJ+CwoGqZCzTrldMisZjvu8=",
 
     "APP_CONFIG_CACHE": "/tmp/config.php",
     "APP_EVENTS_CACHE": "/tmp/events.php",
